@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SmartTechHub - Affordable Tech in Kenya. Buy laptops, accessories, and more.">
+    <title>SmartTechHub | Affordable Tech in Kenya</title>
+    <style>
+        body {
+            background-color: #ffe0e0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            color: #c00000;
+            margin-top: 30px;
+        }
+
+        h3 {
+            color: #333;
+            margin-top: 20px;
+        }
+
+        p {
+            color: #333;
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 10px auto;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        button {
+            background-color: #28a745;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            cursor: pointer;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff9800;
+        }
+
+        img {
+            margin-top: 20px;
+            border-radius: 10px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .container {
+            padding: 40px 20px;
+        }
+
+        .section {
+            padding: 40px 20px;
+        }
+
+        .order-form {
+            background-color: white;
+            width: 350px;
+            max-width: 90%;
+            margin: 30px auto;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        input, textarea {
+            width: 90%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .feature-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 15px;
+            background-color: #333;
+            color: white;
+        }
+
+        /* Responsive */
+        @media screen and (max-width: 768px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <div class="container">
+        <h1>Welcome to SmartTechHub!</h1>
+        <p>Your one-stop destination for **affordable and high-quality tech products in Kenya**. Explore our laptops, smartphones, accessories, and more — all at unbeatable prices.</p>
+        <button onclick="document.getElementById('order').scrollIntoView({ behavior: 'smooth' });">
+            Place Your Order Now
+        </button>
+        <br><br>
+        <img 
+            src="Tech-Convenience-Store-Dell-Latitude-5300-2-in-1-–-Intel-Core-i7-8665U-16GB-RAM-512GB-SSD-13-Inch-Full-HD-Touchscreen-–-Premium-Business-Laptop-03.jpg" 
+            alt="Dell Laptop"
+        >
+        <p>Visit <a href="https://smarttechhub.co.ke/" target="_blank">smarttechhub.co.ke</a> and enjoy the best tech deals in Kenya!</p>
+    </div>
+
+    <!-- About Section -->
+    <div class="section">
+        <h2>About SmartTechHub</h2>
+        <p>SmartTechHub is dedicated to bringing you the **latest technology products** at prices that won't break the bank. We focus on quality, reliability, and excellent customer service, making tech shopping simple and enjoyable for everyone in Kenya.</p>
+    </div>
+
+    <!-- Featured Products Section -->
+    <div class="section">
+        <h2>Featured Products</h2>
+        <div class="features">
+            <div class="feature-box">
+                <h3>Dell Latitude 5300</h3>
+                <p>Powerful business laptop with Intel i7, 16GB RAM, 512GB SSD, and a Full HD touchscreen display.</p>
+            </div>
+            <div class="feature-box">
+                <h3>HP EliteBook x360</h3>
+                <p>Convertible laptop with touchscreen, long battery life, and premium design for professionals.</p>
+            </div>
+            <div class="feature-box">
+                <h3>JBL Noise-Cancelling Headphones</h3>
+                <p>Enjoy crystal-clear sound and comfort for your music and calls at unbeatable prices.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why Choose Us Section -->
+    <div class="section">
+        <h2>Why Choose SmartTechHub?</h2>
+        <p>We combine quality products, affordable prices, and excellent customer support. With SmartTechHub, you get:</p>
+        <ul style="max-width: 600px; margin: 0 auto; text-align: left; font-size: 18px; line-height: 1.6;">
+            <li>Genuine and reliable products</li>
+            <li>Fast delivery across Kenya</li>
+            <li>Easy online ordering</li>
+            <li>Friendly customer service</li>
+        </ul>
+        <br>
+        <button onclick="document.getElementById('order').scrollIntoView({ behavior: 'smooth' });">
+            Order Your Tech Today
+        </button>
+    </div>
+
+    <!-- ORDER FORM -->
+    <div class="order-form" id="order">
+        <h2>Place Your Order</h2>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+            <input type="text" name="product" placeholder="Product Name" required>
+            <textarea name="message" placeholder="Your Message"></textarea>
+            <button type="submit">Submit Order</button>
+        </form>
+    </div>
+
+    <footer>
+        © 2026 SmartTechHub | Affordable Tech in Kenya
+    </footer>
+
+</body>
+</html>
+
