@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: ommiemark/ommiemark.github.io
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    folder: "_pages"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Slug (URL part)", name: "slug", widget: "string", required: true}
+      - {label: "Content", name: "body", widget: "markdown", required: true}
+      - {label: "Featured Image", name: "image", widget: "image", allow_multiple: false}
