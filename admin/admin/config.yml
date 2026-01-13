@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: ommiemark/ommiemark.github.io   # CHANGE if repo name different
+  branch: main
+
+media_folder: "images"      # Upload images here
+public_folder: "/images"
+
+collections:
+  - name: "pages"
+    label: "Pages"           # Like the "Pages" section in mubaracktech
+    folder: "_pages"         # Create this folder in repo root later
+    create: true             # Allow adding new pages
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Slug (URL part)", name: "slug", widget: "string", required: true}
+      - {label: "Content", name: "body", widget: "markdown", required: true}
+      - {label: "Featured Image", name: "image", widget: "image", allow_multiple: false}
