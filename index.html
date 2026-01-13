@@ -12,29 +12,27 @@
             margin: 0;
             padding: 0;
             color: #333;
+            line-height: 1.6;
         }
-
         /* Red top banner */
         .top-banner {
             background-color: #d32f2f;
             color: white;
             text-align: center;
-            padding: 8px;
+            padding: 10px;
             font-weight: bold;
             font-size: 15px;
         }
-
         /* Navbar */
         .navbar {
             background-color: #ffffff;
             border-bottom: 2px solid #ddd;
-            padding: 12px 25px;
+            padding: 15px 30px;
             position: sticky;
             top: 0;
             z-index: 1000;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
-
         .nav-container {
             max-width: 1300px;
             margin: 0 auto;
@@ -42,73 +40,61 @@
             align-items: center;
             justify-content: space-between;
             flex-wrap: wrap;
-            gap: 15px;
+            gap: 20px;
         }
-
         .logo {
-            font-size: 26px;
+            font-size: 28px;
             font-weight: bold;
             color: #c00000;
             text-decoration: none;
         }
-
         .logo span {
             color: #000;
         }
-
         .search-bar {
             flex: 1;
-            min-width: 220px;
             max-width: 450px;
         }
-
         .search-bar input {
             width: 100%;
-            padding: 10px 15px;
+            padding: 12px 20px;
             border: 1px solid #ccc;
-            border-radius: 25px;
+            border-radius: 30px;
             font-size: 16px;
             background: #f9f9f9;
         }
-
         .nav-right {
             display: flex;
             align-items: center;
-            gap: 20px;
+            gap: 25px;
         }
-
         .nav-links {
             display: flex;
-            gap: 22px;
+            gap: 25px;
         }
-
         .nav-links a {
             color: #333;
             text-decoration: none;
             font-weight: 600;
-            font-size: 15px;
+            font-size: 16px;
             transition: color 0.3s;
         }
-
         .nav-links a:hover {
             color: #c00000;
         }
-
         .admin-btn {
             background-color: #d32f2f;
             color: white;
-            padding: 8px 18px;
+            padding: 10px 20px;
             border-radius: 6px;
             text-decoration: none;
             font-weight: bold;
-            font-size: 14px;
+            font-size: 15px;
             transition: background 0.3s;
         }
-
         .admin-btn:hover {
             background-color: #b71c1c;
         }
-
         /* Main content */
         .container {
             max-width: 1200px;
@@ -116,94 +102,93 @@
             padding: 0 20px;
             text-align: center;
         }
-
-        h1, h2 {
+        h1 {
             color: #c00000;
+            font-size: 42px;
+            margin: 20px 0;
         }
-
-        h3 {
-            color: #333;
+        h2 {
+            color: #c00000;
+            font-size: 32px;
+            margin: 50px 0 20px;
         }
-
         p {
             font-size: 18px;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 15px auto;
+            max-width: 900px;
+            margin: 20px auto;
         }
-
         button {
             background-color: #28a745;
             color: white;
             border: none;
-            padding: 14px 30px;
-            font-size: 17px;
-            border-radius: 6px;
+            padding: 15px 35px;
+            font-size: 18px;
+            border-radius: 8px;
             cursor: pointer;
             transition: background 0.3s;
+            margin: 20px 0;
         }
-
         button:hover {
             background-color: #218838;
         }
-
         img {
             max-width: 100%;
             border-radius: 12px;
-            margin: 25px 0;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            margin: 30px 0;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
         }
-
         .features {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 25px;
+            gap: 30px;
             margin: 40px 0;
         }
-
         .feature-box {
             background: white;
-            padding: 25px;
-            border-radius: 10px;
-            width: 320px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 30px;
+            border-radius: 12px;
+            width: 340px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+            text-align: left;
         }
-
+        .feature-box h3 {
+            color: #c00000;
+            margin-bottom: 15px;
+        }
         .order-form {
             background: white;
-            max-width: 420px;
-            margin: 50px auto;
-            padding: 35px;
+            max-width: 450px;
+            margin: 60px auto;
+            padding: 40px;
             border-radius: 12px;
-            box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
         }
-
         input, textarea {
             width: 100%;
-            padding: 12px;
-            margin: 10px 0;
+            padding: 14px;
+            margin: 12px 0;
             border: 1px solid #ccc;
-            border-radius: 6px;
+            border-radius: 8px;
             font-size: 16px;
         }
-
         footer {
             background: #333;
             color: white;
             text-align: center;
-            padding: 20px;
-            margin-top: 60px;
+            padding: 30px;
+            margin-top: 80px;
+            font-size: 15px;
         }
-
         @media (max-width: 768px) {
             .nav-container {
                 flex-direction: column;
-                gap: 15px;
+                gap: 20px;
+                text-align: center;
             }
             .nav-right {
                 flex-direction: column;
-                gap: 12px;
+                gap: 15px;
                 width: 100%;
             }
             .search-bar {
@@ -213,11 +198,12 @@
                 flex-direction: column;
                 align-items: center;
             }
+            h1 { font-size: 32px; }
+            h2 { font-size: 28px; }
         }
     </style>
 </head>
 <body>
-
     <!-- Red top banner -->
     <div class="top-banner">
         Free delivery for orders over KSh 10,000
@@ -230,13 +216,11 @@
             <a href="#" class="logo">
                 SmartTechHub <span>Kenya</span>
             </a>
-
             <!-- Search -->
             <div class="search-bar">
                 <input type="text" placeholder="Search products...">
             </div>
-
-            <!-- Right side: links + Admin button -->
+            <!-- Right side -->
             <div class="nav-right">
                 <div class="nav-links">
                     <a href="#">Home</a>
@@ -247,7 +231,6 @@
                     <a href="#">MacBook</a>
                     <a href="#">Printers</a>
                 </div>
-                <!-- Admin link -->
                 <a href="/admin" class="admin-btn">Admin</a>
             </div>
         </div>
@@ -257,28 +240,25 @@
     <div class="container">
         <h1>Welcome to SmartTechHub!</h1>
         <p>Your one-stop destination for affordable and high-quality tech products in Kenya. Explore our laptops, smartphones, accessories, and more — all at unbeatable prices.</p>
-        
         <button onclick="document.getElementById('order').scrollIntoView({ behavior: 'smooth' });">
             Place Your Order Now
         </button>
-
         <br><br>
         <img
             src="Tech-Convenience-Store-Dell-Latitude-5300-2-in-1-–-Intel-Core-i7-8665U-16GB-RAM-512GB-SSD-13-Inch-Full-HD-Touchscreen-–-Premium-Business-Laptop-03.jpg"
             alt="Dell Latitude Laptop"
         >
-
         <p>Visit <a href="https://smarttechhub.co.ke/" target="_blank">smarttechhub.co.ke</a> for even more deals!</p>
     </div>
 
     <!-- About -->
-    <div class="section">
+    <div class="container">
         <h2>About SmartTechHub</h2>
         <p>SmartTechHub is dedicated to bringing you the latest technology products at prices that won't break the bank. We focus on quality, reliability, and excellent customer service.</p>
     </div>
 
     <!-- Featured Products -->
-    <div class="section">
+    <div class="container">
         <h2>Featured Products</h2>
         <div class="features">
             <div class="feature-box">
@@ -297,15 +277,14 @@
     </div>
 
     <!-- Why Choose Us -->
-    <div class="section">
+    <div class="container">
         <h2>Why Choose SmartTechHub?</h2>
-        <ul style="max-width: 700px; margin: 0 auto; text-align: left; font-size: 18px;">
+        <ul style="max-width: 700px; margin: 20px auto; text-align: left; font-size: 18px; padding-left: 30px;">
             <li>Genuine refurbished & new products</li>
             <li>Fast delivery across Kenya</li>
             <li>Affordable prices</li>
             <li>Excellent customer support</li>
         </ul>
-        <br>
         <button onclick="document.getElementById('order').scrollIntoView({ behavior: 'smooth' });">
             Order Your Tech Today
         </button>
@@ -318,7 +297,7 @@
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="tel" name="phone" placeholder="Phone Number" required>
             <input type="text" name="product" placeholder="Product Name" required>
-            <textarea name="message" placeholder="Your Message / Questions" rows="4"></textarea>
+            <textarea name="message" placeholder="Your Message / Questions" rows="5"></textarea>
             <button type="submit">Submit Order</button>
         </form>
     </div>
@@ -326,9 +305,5 @@
     <footer>
         © 2026 SmartTechHub | Affordable Tech in Kenya
     </footer>
-
 </body>
 </html>
-</body>
-</html>
-
